@@ -20,4 +20,4 @@ Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
 
-Route.post('/api/v1/homes', 'HomeController.create')
+Route.post('/api/v1/homes', 'HomeController.create').validator('CreateHome')
