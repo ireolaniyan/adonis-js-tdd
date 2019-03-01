@@ -1,7 +1,9 @@
 'use strict'
 
-const { test } = use('Test/Suite')('Home')
+const { test, trait } = use('Test/Suite')('Home')
 
-test('make sure 2 + 2 is 4', async ({ assert }) => {
-  assert.equal(2 + 2, 4)
-})
+trait('Test/ApiClient')
+
+test('Should be able to create a new Home through the HTTP client', async ({ assert, client }) => {
+  
+}).timeout(0)
