@@ -21,3 +21,5 @@ Route.get('/', () => {
 })
 
 Route.post('/api/v1/homes', 'HomeController.create').validator('CreateHome')
+Route.put('/api/v1/homes/:id', 'HomeController.editHome')
+Route.get('/api/v1/homes/all-homes', 'HomeController.allHomes')
